@@ -226,7 +226,7 @@ nav a:hover {
   }
 
 
-/*FEATURES*/
+/*---------------------------------------FEATURES-------------------------------------*/
 
 #features {
     background: url(../img/bg-features.png);
@@ -274,9 +274,8 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.59);
 }
 
-/*END FEATURES*/
 
-/*UBICACION*/
+/*------------------------------------SOY EL MAPA---------------------------------*/
 
 .location{
  
@@ -310,7 +309,7 @@ nav a:hover {
     width: 80%;
 }
 
-/*CARRUSEL*/
+/*---------------------------------CAARDS--------------------------------------*/
 
 .title-cards{
     color: var(--blanco);
