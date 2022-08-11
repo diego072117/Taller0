@@ -1,0 +1,577 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300;400&display=swap');
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@500&family=Roboto:wght@300;400&display=swap');
+
+:root{
+    
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/calle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+nav{
+    z-index: 1;
+    position: absolute;
+    height: 76.9em;
+    left: 0;
+    background: var(--azulnegro);
+    width: 80px; 
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+    width: 4rem;
+    margin-top: 14px;
+    margin-left: -3.6em;
+}
+.nav-title{
+    color: var(--blanco);
+    font-size: 50px;
+    margin-left: 15px;
+    margin-top: -55px;
+}
+
+.img-fondo{
+    position: relative;
+    width: 20.5em;
+    height: 14.5em;
+    top: -15px;
+    background-image: url(../img/Group\ 200.svg);
+    background-size: cover;
+}
+
+.logo{
+    position: relative;
+    top: 10%;
+    left: 20%;
+}
+
+.name-user{
+    position: relative;
+    color: var(--blanco);
+    padding-top: 8px;
+    left: 50px;
+    font-size: 26px;
+   
+}
+
+.gmail-user{
+    font-size: 13px;
+}
+
+
+.icon{
+    color: var(--blanco);
+}
+
+
+
+.img-person{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+}
+
+
+
+a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 380px;
+    padding: 10px;
+}
+
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    color: var(--blanco);
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+a:hover{
+    background: var(--azuloscuro);
+}
+
+nav:hover{
+    width: 230px;
+    transition: all 0.5s ease;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.container{
+    display: flex;
+    margin-left: 4.5em;
+
+}
+
+.main{
+    background-color: rgba(225, 228, 225, 0.86);
+    width: 100%;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 1.5em;
+}
+
+
+
+input{
+    width: 50%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+label{
+    font-size: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 23px;
+}
+
+img{
+    display: flex;
+    margin: auto;
+    width: 130px;
+    margin-top: 20px;
+}  
+
+.download{
+    display: flex;
+    margin: auto;
+    width: 130px;
+    height: 35px;
+    margin-top: 8px;
+    background: var(--azuloscuro);
+}
+
+.download i{
+ 
+    color: var(--blanco);
+    margin-left: 52px;
+    margin-top: 1px;
+    font-size: 30px;
+}
+
+.download .icon-escond{
+    display: none;
+}
+
+.checks{
+    display: flex;
+    gap: 20px;
+}
+.form-check{
+    height: 70px;
+    padding: 1px;
+}
+
+input{
+   
+    width: 100%;
+}
+
+.button {
+    margin-top: 20px;
+    width: 65%;
+    height: 30px;
+    background-color: var(--negro2);
+    color: #fff;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.but{
+    background: var(--azulnegro);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    width: 65%;
+    height: 30px;
+}
+
+.button2{
+    background: var(--azulnegro);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    width: 65%;
+    height: 30px;
+}
+
+.Update-password{
+    display: none;
+}
+
+
+/*Resolución notebooks*/
+@media screen and (min-width: 1024px){
+   
+    nav{
+       height: 100%;
+    }
+    
+    .logo img{
+        width: 4rem;
+        margin-top: 14px;
+        margin-left: -3.6em;
+    }
+    .nav-title{
+        color: var(--blanco);
+        font-size: 50px;
+        margin-left: 15px;
+        margin-top: -55px;
+    }
+    
+    .img-fondo{
+        position: relative;
+        width: 20.5em;
+        height: 14.5em;
+        top: -15px;
+        background-image: url(../img/Group\ 200.svg);
+        background-size: cover;
+    }
+    
+    .logo{
+        position: relative;
+        top: 10%;
+        left: 20%;
+    }
+    
+    .name-user{
+        position: relative;
+        color: var(--blanco);
+        padding-top: 85px;
+        left: 60px;
+        font-size: 23px;
+       
+    }
+    
+    .gmail-user{
+        font-size: 13px;
+    }
+    
+    
+    .icon{
+        color: var(--blanco);
+    }
+    
+    
+    .img-person{
+        
+        display: none;
+    }
+    
+    .img-person img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+    .img-person span{
+        font-weight: bold;
+        padding-left: 15px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    a{
+        position: relative;
+        color: rgb(85, 83, 83);
+        font-size: 14px;
+        display: table;
+        width: 380px;
+        padding: 10px;
+    }
+    
+    .fas{
+        position: relative;
+        width: 70px;
+        height: 40px;
+        top: 14px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .nav-item{
+        position: relative;
+        top: 12px;
+        margin-left: 10px;
+        color: var(--blanco);
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .logout{
+        position: absolute;
+        bottom: 0;
+    }
+
+    nav:hover{
+        width: 280px;
+        transition: all 0.5s ease;
+    }
+
+    .main{
+        background-color: rgba(225, 228, 225, 0.86);
+        width: 70%;
+        margin: 20px;
+        border-radius: 7px;
+        margin-left: 25em;
+        margin-top: 3em;
+    }
+    
+    
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        margin-top: 5em;
+    }
+    
+    
+    
+    input{
+        width: 50%;
+        padding: 5px 20px;
+        margin: 8px 0;
+        border-radius: 4px;
+        font-size: 20px;
+    }
+    
+    label{
+        font-size: 25px;
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 45px;
+        margin-top: 10px;
+
+    }
+    
+    img{
+        display: flex;
+        margin: auto;
+        width: 18%;
+        margin-top: 20px;
+        margin-left: 10%;
+    }  
+    
+    .download{
+        display: flex;
+        margin: auto;
+        width: 18%;
+        height: 6.5%;
+        margin-left: 10%;
+        margin-top: 8px;
+        background: var(--azuloscuro);
+    }
+    
+    .download i{
+     
+        color: var(--blanco);
+        margin-left: 55px;
+        margin-top: 1px;
+        font-size: 50px;
+    }
+    
+    .download .icon-escond{
+        display: flex;
+    }
+  
+    
+    input{
+       
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+    
+    .button {
+        margin-top: 20px;
+        width: 65%;
+        height: 30px;
+        background-color: var(--negro2);
+        color: #fff;
+        border-radius: 3px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .but{
+        background: var(--azulnegro);
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+        width: 15%;
+        height: 50px;
+    }
+
+    .tipe-document{
+        margin-left: 30em;
+        margin-top: -24em;
+        width: 50%;
+    }
+
+    .name{
+        margin-left: 30em;
+        width: 50%;
+    }
+    
+    .date{
+        margin-left: 30em;
+        width: 50%;
+    }
+    
+    .checks{
+        display: flex;
+        gap: 20px;
+    }
+
+    .form-check{
+        margin-left: 30em;
+    }
+
+    .email{
+        margin-left: 30em;
+        margin-top: 2em;
+        width: 50%;
+    }
+
+    .but{
+        width: 15%;
+        height: 40px;
+        margin-left: 24em;
+        margin-top: 5em;
+    }
+
+    .password{
+        margin-left: 30em;
+        margin-top: -1em;
+        width: 50%;
+    }
+
+    .button2{
+        width: 15%;
+        height: 40px;
+        margin-left: 24em;
+        margin-top: 0.5em;
+    }
+
+    .num-doc{
+        width: 50%;
+        margin-left: 55em;
+        margin-top: -30.5em;
+    }
+
+    .apell{
+        width: 50%;
+        margin-left: 55em;
+    }
+
+    .pais{
+        width: 50%;
+        margin-left: 55em;
+    }
+    
+    .phone{
+        width: 50%;
+        margin-left: 55em;
+    }
+
+    .confirmar{
+        position: absolute;
+        width: 32%;
+        margin-top: 10.5em;
+        margin-left: 55em;
+    }
+    
+    .Update-password{
+        display: flex;
+        background: var(--azulnegro);
+        border-radius: 5px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 30px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 235px;
+        left: 8.5%;
+        top: -11em; 
+       
+    }
+    
+ 
+}
